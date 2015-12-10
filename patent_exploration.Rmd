@@ -8,7 +8,6 @@ library(knitr)
 opts_chunk$set(echo=FALSE, message=FALSE)
 ```
 
-
 ```{r,echo=FALSE, message=FALSE, results='hide', warning=FALSE}
 # Loading libraries
 library(ggplot2)
@@ -18,7 +17,6 @@ library(igraph)
 # Set ggplot theme
 theme_set(theme_minimal(15))
 ```
-
 
 ```{r, echo=FALSE, warning=FALSE, results='hide', message=FALSE}
 # Loading and preparing data
@@ -78,7 +76,6 @@ ggplot(head(assignees, 25), aes(Var1, Freq)) +
     ylab("Number of patents") 
 ```
 
-
 ## International Patent Classification
 ```{r}
 classes <- as.data.frame(table(patentsByIPC$Class))
@@ -116,7 +113,10 @@ ggplot(patents, aes(InventorCount)) +
   xlab("Number of inventors") +
   ylab("Count")+
   ggtitle("Number of inventors")
+```
 
+Number of inventors as percentage of all patents:
+```{r}
 round(table(patents$InventorCount) / nrow(patents), 3)
 ```
 
@@ -127,7 +127,10 @@ ggplot(patents, aes(AssigneeCount)) +
   xlab("Number of assignees") +
   ylab("Count")+
   ggtitle("Number of assignees")
+```
 
+Number of assignees as percentages of all patents:
+```{r}
 round(table(patents$AssigneeCount) / nrow(patents), 3)
 ```
 
