@@ -101,6 +101,7 @@ top10Data <- patentsByIPC[patentsByIPC$Class %in% top10Classes, ]
 classByYear <- as.data.frame(table(top10Data$Class, top10Data$Year))
 names(classByYear) <- c("Class", "Year", "Freq")
 classByYear$Class <- factor(classByYear$Class)
+classByYear$Year <- as.integer(as.character(classByYear$Year))
 
 ggplot(classByYear, aes(Year, Freq, color = Class)) + 
   geom_line(aes(group = Class)) + 
