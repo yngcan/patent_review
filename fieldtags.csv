@@ -1,0 +1,29 @@
+tag;field
+FN;File Name
+VR;Version Number
+PT;Publication Type (book, journal, book in series)
+PN;Patent Number(s)
+TI;Document Title
+AU;Inventor(s)
+AE;Assignee(s)
+GA;Derwent Primary Accession Number
+AB;Abstract
+EA;Equivalent Abstract
+TF;Technology Focus Abstract
+DC;Derwent Class Code(s)
+MC;Derwent Manual Code(s)
+IP;International Patent Classification
+PD;Patent Details
+AD;Application Details and Date
+FD;Further Application Details
+PI;Priority Application Information and Date
+DS;Designated States
+FS;Field of Search
+CP;Cited Patent(s)
+CR;Cited Article(s)
+DN;DCR Number
+MN;Markush Number
+RI;Ring Index Number
+RG;Derwent Registry Number
+ER;End of Record
+EF;End of File
